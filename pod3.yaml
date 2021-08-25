@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod3
+spec:
+  containers:
+    - name: c03
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo third container; sleep 5 ; done"]
+    - name: c04
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo fourth container; sleep 5 ; done"]
+    - name: c05 
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo fivth container; sleep 5 ; done"]
+
